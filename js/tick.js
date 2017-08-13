@@ -114,6 +114,16 @@ function tick(event) {
     if (l2Tree01.subX < 0 - 32) {
       l2Tree01.subX = STAGE_W + 32
     }
+    for (var i = 0; i < baseContainer.children.length; i++) {
+      // console.log("name : "+baseContainer.children[i].name);
+      for (var j in baseContainer.children[i]) {
+        console.log("ppt"+i+" : "+j+" : "+baseContainer.children[i][j]);
+      }
+      // console.log(baseContainer.children[i].id+":x = "+baseContainer.children[i].x);
+      // console.log(baseContainer.children[i].id+":y = "+baseContainer.children[i].y);
+    }
   }
+  statusGame = -1;
+
   stage.update(event); // important!!
 }
