@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>あとで改題制御</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!-- viewportでスマホの拡大操作を無効にする。 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+	<script src="./js/createjs-2015.11.26.min.js"></script>
+	<script src="./js/config.js"></script>
+	<script src="./js/init.js"></script>
+	<script src="./js/tick.js"></script>
+	<script src="./js/handle.js"></script>
+	<script src="./js/complete.js"></script>
+	<script src="./js/sound.js"></script>
+	<style>
+        canvas#savannahCanvas {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body onload="init();">
+	<canvas id="multizoomCanvas" style="margin-top: 70px;">
+		alternate content
+	</canvas>
+</body>
+</html>
